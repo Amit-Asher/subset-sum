@@ -1,0 +1,33 @@
+SUBSET SUM RECURSIVE TESTS
+* PASS: normal case
+subsetSumRecursive([1, 3, 5, 7, 100, 13], 12) => [2, 3] (expected [2, 3])
+* PASS: empty array passes
+subsetSumRecursive([], 0) => [] (expected [])
+* PASS: empty array failed
+subsetSumRecursive([], 2) => [] (expected [])
+* PASS: subset of all elements
+subsetSumRecursive([1, 2, 3], 6) => [0, 1, 2] (expected [0, 1, 2])       
+* PASS: multiple solutions
+subsetSumRecursive([1, 4, 3], 4) => [1] (expected [1])
+* PASS: ascensing array
+subsetSumRecursive([1, 3, 8], 11) => [1, 2] (expected [1, 2])
+* PASS: descensing array
+subsetSumRecursive([12, 6, 2], 14) => [0, 2] (expected [0, 2])
+============================
+
+SUBSET SUM DYNAMIC PROGRAMMING TESTS
+* PASS: normal case
+subsetSumRecursive([1, 3, 5, 7, 100, 13], 12) => [2, 3] (expected [2, 3])
+* PASS: empty array passes
+subsetSumRecursive([], 0) => [] (expected [])
+* PASS: empty array failed
+subsetSumRecursive([], 2) => [] (expected [])
+* PASS: subset of all elements
+subsetSumRecursive([1, 2, 3], 6) => [0, 1, 2] (expected [0, 1, 2])
+* PASS: multiple solutions
+subsetSumRecursive([1, 4, 3], 4) => [1] (expected [1])
+* PASS: ascensing array
+subsetSumRecursive([1, 3, 8], 11) => [1, 2] (expected [1, 2])
+* PASS: descensing array
+subsetSumRecursive([12, 6, 2], 14) => [0, 2] (expected [0, 2])
+============================
